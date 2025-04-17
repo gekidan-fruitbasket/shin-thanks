@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>お申し込みありがとうございます</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){
+    if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '658639567070291');   // Pixel ID
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');             // 申込完了イベント
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=658639567070291&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- ▼ 3秒後に STUDIO thanks ページへ自動リダイレクト -->
+  <meta http-equiv="refresh" content="3; url=https://fb-shin-sapporo.studio.site/thanks" />
+
+  <style>
+    body{font-family:sans-serif;text-align:center;padding:4rem}
+    h1{font-size:1.8rem;margin-bottom:1rem}
+  </style>
+</head>
+
+<body>
+  <h1>お申し込みありがとうございます！</h1>
+  <p>まもなくページが切り替わります。<br>
+     切り替わらない場合は
+     <a href="https://fb-shin-sapporo.studio.site/thanks">こちら</a> をクリックしてください。</p>
+</body>
+</html>
